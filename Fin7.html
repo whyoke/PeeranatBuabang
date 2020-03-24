@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<style>
+body{
+   width: 1920px;
+   height: 1080px;
+}
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+
+.menu{
+    position:sticky ;
+    top: -1px;
+    left: -1px;
+    width: 1922px;
+    height: 66px;
+    background: lightblue;
+    text-align: center;
+    font-family: "Roboto";
+    border: 1px black;
+}
+
+.menu li{
+    margin: 20px;
+	 display: inline-block;
+    width: 219px;
+    color: black;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.text1{
+   position: relative;
+   top: 400px;
+   left: 460px;
+   width: 1000px;
+   height: 57px;
+   text-align: center;
+   font-size: 40px;
+   font-family: "Roboto";
+   font-weight: medium ;
+   letter-spacing: 0;
+   color: #333333;
+   opacity: 1;
+   animation: text 3s 1;
+}
+
+.text2{
+   position: absolute;
+   top: 572px;
+   left: 718px;
+   width: 484px;
+   height: 33px;
+   text-align: center;
+   font-size: 20px;
+   font-family: "Roboto";
+   font-weight: lighter ;
+letter-spacing: 0;
+color: #757575;
+opacity: 1;
+}
+
+.text3{
+   position: absolute;
+   top: 689px;
+   left: 825px;
+   width: 270px;
+   height: 33px;
+   text-align: center;
+   font-size: 20px;
+   font-family: "Roboto";
+   font-weight: bold ;
+   letter-spacing: 0;
+   color: #007AFF;
+   opacity: 1;
+}
+
+.hide{
+    position: absolute;
+    top:650px;
+    left:780px;
+    font-family: "Roboto";
+    color: white;
+}
+
+@keyframes text {
+    0%{
+        color: black;
+    
+    }
+    30%{
+        letter-spacing: 25px;
+  
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+    var keys = [];
+
+    var code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+
+    $("#monster-container").hide();
+
+    $(document).keydown(function(keyEvent) {
+
+      keys.push(keyEvent.keyCode);
+      if ( keys.length > code.length ) {
+        keys.shift();
+      }
+      if ( keys.toString() == code.toString() ) {
+        $('#monster-container').slideDown('slow');
+      }
+    });
+  });
+</script>
+</head>
+<body>
+  
+   <ul class="menu">
+      <li><a href="Fin2.html">MacBook</a></li>
+   
+      <li><a href="Fin3.html">Surface</a></li>
+      
+      <li><a href="Fin4.html">Swift</a></li>
+      
+      <li><a href="Fin5.html">XPS</a></li>
+   
+      <li><a href="Fin6.html">ZenBook</a></li>
+   </ul> 
+    <div class="animation-area">
+    <ul class="box-area">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  </div>
+
+<ul class="text1">
+   Thanks for your order.
+</ul>
+
+<ul class="text2">
+   We will email you when your item ship.<br>
+   (This page has a secret!!!)
+</ul>
+
+<ul class="hide"> up up down down left right left right B A Enter </ul>
+
+<ul class="text3">
+   <a href="Fin1.html">Browse more product</a>
+</ul> 
+
+<div id="monster-container" class="real-big">
+    <a href="Profile.html"><img src="giphy (1).gif"> </a>
+</div>
+
+<!-- ,,,,...   ...,,,....   ...,,,...    ...,,,...   ....,,,...   ...,,,,...   ...,,,
+,,,,...   ...,,,....   ...,,,...    ...,,,...   ....,,,...   ...,,,,...   ...,,,
+....,,,...   ...,,,,...   ...,,,....   ...   ...,,,,...   ...,,,....   ...,,,...
+    ...,,,...   ....,,,...   ...,,,,...   ...,,,....   ...,,,...    ...,,,...   
+....   ...,,,...    ...,,,...   ....,,,...,,,...    ...,,,...   ....,,,...   ...
+....   ...,,,...    ...,,,...   ....,,,...,,,...    ...,,,...   ....,,,...   ...
+,,,,...   ...,,,....   ...,,,...  @@@///////@@@ ....,,,...   ...,,,,...   ...,,,
+....,,,...   ...,,,,...   ...###%%##*********##%####...   ...,,,....   ...,,,...
+    ...,,,...   ....,,,.    @***********************@   ..,,,...    ...,,,...   
+....   ...,,,...    ...,,,@@,**,**,,*,,***,,*,,*,,**,@@,,,...   ....,,,...   ...
+....   ...,,,...    ...,,,@@*,,*,,**,**,,,**,**,**,,*@@,,,...   ....,,,...   ...
+,,,,...   ...,,,....   @@@,,,,,,,,,,,,,,,,,,,,,,,,,,,,,@@@   ...,,,,...   ...,,,
+....,,,...   ...,,,,...@((,,(,,(,,((,((,,,((,((,((,,(,,(@@...,,,....   ...,,,...
+    ...,,,...   ....,@@(((((((((((((((((((((((((((((((((((@@,...    ...,,,...   
+    ...,,,...   ....,@@(((((((((((((((((((((((((((((((((((@@,...    ...,,,...   
+....   ...,,,...    .@@(..((.((.((..(..(((..(..(..((.((.((@@.   ....,,,...   ...
+,,,,...   ...,,,....@.......................................@...,,,,...   ...,,,
+....   ...,,,...    @**.**..*..*..**.**...**.**.**..*..*..**@   ....,,,...   ...
+    ...,,,...   ....@***************************************@...    ...,,,...   
+    ...,,,...   ....@***************************************@...    ...,,,...   
+....,,,...   ...,,,,.@@*//**/**/**//*//***//*//*//**/**/**@@.,,,....   ...,,,...
+,,,,...   ...,,,.... @@///////////////////////////////////@@ ...,,,,...   ...,,,
+....   ...,,,...    ...@&&//&//&//&&/&&///&&/&&/&&//&//&@@...   ....,,,...   ...
+.......,,,,,,.......,,,(%%&&#&&#&&##&##&&&##&##&##&&#&&%((,,,.......,,,,,,......
+    ...,,,...   ....,,,.@@@@&&&&&&&&&&&&&&&&&&&&&&&&&@@@..,,,...    ...,,,...   
+....,,,...   ...,,,,...   ...@@,&&,,&,,&&&,,&,,&,,@@...   ...,,,....   ...,,,...
+,,,,...   ...,,,....   ...,,,..@@@@@@,,,,,,,@@@@@@..,,,...   ...,,,,...   ...,,,
+....   ...,,,...    ...,,,...   ....,,,...,,,...    ...,,,...   ....,,,...   ...
+....   ...,,,...    ...,,,...   ....,,,...,,,...    ...,,,...   ....,,,...   ...
+    ...,,,...   ....,,,...   ...,,,,...   ...,,,....   ...,,,...    ...,,,...   
+....,,,...   ...,,,,...   ...,,,....   ...   ...,,,,...   ...,,,....   ...,,,...
+,,,,...   ...,,,....   ...,,,...    ...,,,...   ....,,,...   ...,,,,...   ...,,,
+*-->
+
+</body>
+</html>
